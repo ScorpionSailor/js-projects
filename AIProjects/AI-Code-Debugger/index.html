@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Code Debugger</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-bug"></i> AI Code Debugger</h1>
+            <p class="subtitle">Your AI-powered code analysis and debugging assistant</p>
+        </header>
+
+        <div class="language-selector">
+            <label for="language">Select Programming Language:</label>
+            <select id="language">
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="cpp">C++</option>
+                <option value="csharp">C#</option>
+                <option value="php">PHP</option>
+                <option value="ruby">Ruby</option>
+                <option value="go">Go</option>
+                <option value="rust">Rust</option>
+                <option value="typescript">TypeScript</option>
+            </select>
+        </div>
+
+        <div class="code-editor">
+            <div class="editor-header">
+                <span>Your Code</span>
+                <button onclick="formatCode()" class="format-button">
+                    <i class="fas fa-code"></i> Format Code
+                </button>
+            </div>
+            <textarea id="codeInput" placeholder="Paste your code here..."></textarea>
+        </div>
+
+        <div class="debug-options">
+            <button onclick="analyzeCode()" class="analyze-button">
+                <i class="fas fa-search"></i> Analyze Code
+            </button>
+            <button onclick="findBugs()" class="bug-button">
+                <i class="fas fa-bug"></i> Find Bugs
+            </button>
+            <button onclick="optimizeCode()" class="optimize-button">
+                <i class="fas fa-magic"></i> Optimize Code
+            </button>
+        </div>
+
+        <div class="results-container">
+            <div class="results-header">
+                <h2>Analysis Results</h2>
+                <button onclick="clearResults()" class="clear-button">
+                    <i class="fas fa-trash"></i> Clear Results
+                </button>
+            </div>
+            <div id="results" class="results-content">
+                <!-- Results will be displayed here -->
+            </div>
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <span>Analyzing your code...</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
