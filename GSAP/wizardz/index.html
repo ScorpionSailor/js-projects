@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="relative bg-[#1a1a1a] min-w-[950px] overflow-x-hidden">
+<body class="relative bg-[#1a1a1a] min-w-65 lg:min-w-[1024px] overflow-x-hidden">
 
     <nav class="flex items-center justify-between py-6 px-16">
         <div id="logo" class="font-bold text-xl flex items-center justify-between gap-2.5">
             <i class="ri-shining-2-fill rotate-45 inline-block"></i>
             <h1>WizardZ</h1>
         </div>
+        <i id="hamburger" class="fa-solid fa-bars"></i>
         <div class="subnav flex items-center gap-5">
             <p>About Us</p>
             <p>Services</p>
@@ -30,8 +31,8 @@
     </nav>
 
     <div class="main flex items-center mt-8">
-        <div class="left w-[40%] pl-16">
-            <h2 class="text-6xl mb-7">Navigating The Digital LandScape For Success</h2>
+        <div class="left sm:px-16 max-lg:w-[100%] w-[40%] pl-16 ">
+            <h2 class="text-4xl sm:text-5xl mb-7">Navigating The Digital LandScape For Success</h2>
             <p class="mb-7 pr-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo amet nisi accusamus, dicta at ullam tempora itaque architecto exercitationem officia odio, eaque quia, ab rem?</p>
             <button class="px-8 py-4 rounded-lg border text-lg">Book a Consoltation</button>
         </div>
@@ -46,10 +47,15 @@
         <img class="h-20 w-50 object-cover" src="https://pnghq.com/wp-content/uploads/microsoft-logo-png-transparent-8190-2048x753.png" alt="">
         <img class="h-20 w-50 object-fit px-10" src="https://pnghq.com/wp-content/uploads/apple-logo-png-transparent-elements-768x912.png" alt="">
         <img class="h-20 w-50 object-fit py-2" src="https://www.pngarts.com/files/7/Zoom-Logo-PNG-Transparent-Image.png" alt="">
+        <img class="h-20 w-50 hidden max-lg:block object-cover" src="https://www.pngplay.com/wp-content/uploads/3/White-Amazon-Logo-Background-PNG-Image.png" alt="">
+        <img class="h-20 w-50 hidden max-lg:block object-cover" src="https://static.vecteezy.com/system/resources/previews/022/101/069/non_2x/netflix-logo-transparent-free-png.png" alt="">
+        <img class="h-20 w-50 hidden max-lg:block object-cover" src="https://pnghq.com/wp-content/uploads/microsoft-logo-png-transparent-8190-2048x753.png" alt="">
+        <img class="h-20 w-50 hidden max-lg:block object-fit px-10" src="https://pnghq.com/wp-content/uploads/apple-logo-png-transparent-elements-768x912.png" alt="">
+        <img class="h-20 w-50 hidden max-lg:block object-fit py-2" src="https://www.pngarts.com/files/7/Zoom-Logo-PNG-Transparent-Image.png" alt="">
     </div>
 
     <div id="page2">
-        <div class="services px-16 flex items-center justify-between gap-7 max-w-275 my-22">
+        <div class="services px-16 max-sm:flex-col flex items-center justify-between gap-7 max-w-275 my-22">
             <h2 class="bg-[#c6f484] items-center flex justify-center text-black font-bold text-2xl p-1">Services</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt accusantiumw sapiente pariatur unde commodi Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit. </p>
         </div>
@@ -123,7 +129,7 @@
                 <img class="max-w-80" src="https://static.vecteezy.com/system/resources/previews/010/998/283/original/3d-programmer-pc-illustration-side-view-free-png.png" alt="">
             </div>
             
-            <div class="case-study px-16 flex items-center justify-between gap-7 max-w-260 my-22">
+            <div class="case-study px-16 max-sm:flex-col flex items-center justify-between gap-7 max-w-260 my-22">
                 <h2 class="bg-[#c6f484] text-black font-bold text-2xl whitespace-nowrap p-1">Case Study</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt accusantiumw sapiente pariatur unde commodi Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, atque.</p>
             </div>
